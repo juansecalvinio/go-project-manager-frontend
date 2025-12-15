@@ -1,17 +1,15 @@
 import { mockDelay } from "../../../../api/mock-client";
-import type { LoginResponseDTO } from "../../domain/models/Login";
-import type { RegisterResponseDTO } from "../../domain/models/Register";
+import type { AuthResponse } from "../../domain/models/Auth";
 import type { UsersRepository } from "../../domain/repositories/UsersRepository";
-import mockLoginResponse from "../mocks/login-response.json";
-import mockRegisterResponse from "../mocks/register-response.json";
+import mockAuthResponse from "../mocks/auth-response.json";
 
 export const MockUserRepository: UsersRepository = {
-  register: async function (): Promise<RegisterResponseDTO> {
+  register: async function (): Promise<AuthResponse> {
     await mockDelay();
-    return Promise.resolve(mockRegisterResponse as RegisterResponseDTO);
+    return Promise.resolve(mockAuthResponse as AuthResponse);
   },
-  login: async function (): Promise<LoginResponseDTO> {
+  login: async function (): Promise<AuthResponse> {
     await mockDelay();
-    return Promise.resolve(mockLoginResponse as LoginResponseDTO);
+    return Promise.resolve(mockAuthResponse as AuthResponse);
   },
 };

@@ -1,10 +1,10 @@
-import type { LoginRequestDTO, LoginResponseDTO } from "../models/Login";
 import type {
-  RegisterRequestDTO,
-  RegisterResponseDTO,
-} from "../models/Register";
+  AuthResponse,
+  LoginRequest,
+  RegisterRequest,
+} from "../models/Auth";
 
 export interface UsersRepository {
-  register: (user: RegisterRequestDTO) => Promise<RegisterResponseDTO>;
-  login: (user: LoginRequestDTO) => Promise<LoginResponseDTO>;
+  register: (user: RegisterRequest) => Promise<AuthResponse>;
+  login: (user: LoginRequest) => Promise<AuthResponse>;
 }
