@@ -1,0 +1,10 @@
+{
+  "role": "developer",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZWRmOGEyM2YtMGNlOC00YjZjLTk0MWUtMmM4NjRmMTZhYjUyIiwiZW1haWwiOiJwZXRlcmRvZUBjb21wYW55Lm9yZyIsInJvbGUiOiJkZXZlbG9wZXIiLCJleHAiOjE3NjU4NDU1Nzh9.rE31xH0fWCZOgbJrH4gkqDJlztNan3sP5L3yBgE2jPk",
+  "user": {
+    "id": "edf8a23f-0ce8-4b6c-941e-2c864f16ab52",
+    "name": "Peter Doe",
+    "email": "peterdoe@company.org",
+    "role": "developer"
+  }
+}

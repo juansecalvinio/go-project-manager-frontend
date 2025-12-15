@@ -109,5 +109,5 @@ export class HttpClient {
 }
 
 export const api = new HttpClient({
-  baseUrl: "http://localhost:8080/api",
+  baseUrl: "http://localhost:8080/",
 });
